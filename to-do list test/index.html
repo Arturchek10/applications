@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to-Do list</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>To-Do List <img height="25px" src="images/icon.png" alt=""></h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your text">
+        <button id="add-button"onclick="addTask()">Add</button>
+        <button id="remove-button"onclick="removeAll()">remove all</button>
+      </div>
+      <ul id="list-container">
+        <!-- сюда добавляем строки с текстом (li) -->
+      </ul>
+    </div>
+    <div class="instructions">
+      <p>клик левой мышкой - зачеркнуть задание</p>
+      <p>двойной клик - удалить задание</p>
+    </div>
+  </div>
+  <script src="main.js" hidden></script>
+</body>
+
+</html>

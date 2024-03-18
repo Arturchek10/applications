@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+html {
+  background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(130, 233, 120, 1) 48%, rgba(38, 219, 74, 1) 100%);
+}
+
+h2 {
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#add-button {
+  background-color: rgb(49, 224, 79);
+}
+
+#remove-button {
+  background-color: red;
+}
+
+.instructions {
+  margin-left: 10px;
+  margin-top: 70px;
+}
+
+.row {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-left: 25px;
+
+}
