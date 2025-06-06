@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- gsap -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
+  <!-- fonts -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Paper Stone Scissors</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="left-bar">
+      <p style="font-size: 25px; padding-top: 10px;">available maps</p>
+      <div class="img-wrapper">
+        <img src="assets\maps\desert-map.svg" alt="desert map">
+        <p class="map-name">DESERT</p>
+      </div>
+      <div class="img-wrapper">
+        <img src="assets\maps\winter-map.svg" alt="winter map">
+        <p class="map-name">WINTER</p>
+      </div>
+      <div class="img-wrapper">
+        <img src="assets\maps\forest-map.svg" alt="forest map">
+        <p class="map-name">FOREST</p>
+      </div>
+      <div class="img-wrapper">
+        <img src="assets\maps\classic-map.png" alt="classic map" style="max-height:167px;">
+        <p class="map-name">CLASSIC</p>
+      </div>
+    </div>
+    <div class="main-text">
+      <div class="svg-img">
+        <img id="sword-svg" src="assets\free_icon_1.svg"></img>
+        <img id="sword2-svg" src="assets\free_icon_1.svg"></img>
+      </div>
+      <div class="ready-to-game">
+        <span class="text-span">READY</span>
+        <br>
+        <span class="text-span">To GAME?</span>
+      </div>
+    </div>
+    <div class="main-body">
+      <div class="select-player">
+        <span>choose a warrior</span>
+        <img class="person" src="assets\person-red.svg" alt="person">
+        <img class="person" src="assets\person-blue.svg" alt="person">
+      </div>
+    </div>
+  </div>
+</body>
+
+<script >
+  document.querySelectorAll(".text-span").forEach(el => {
+  const chars = el.textContent.split('');
+  el.textContent = '';
+
+  chars.forEach((char, i) => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.display = 'inline-block';
+    span.style.opacity = 0;
+    span.style.transform = 'translateY(40px)';
+    el.appendChild(span);
+
+    gsap.to(span, {
+      opacity: 1,
+      y: 0,
+      delay: i * 0.10,
+      duration: .7,
+      ease: "power3.out"
+    });
+  });
+});
+
+</script>
+
+
+</html>
