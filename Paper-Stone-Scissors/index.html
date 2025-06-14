@@ -10,28 +10,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poetsen+One&display=swap" rel="stylesheet">
   <!-- fonts -->
-  <link rel="stylesheet" href="styles.css">
-  <title>Paper Stone Scissors</title>
+  <link rel="stylesheet" href="styles/styles.css  ">
+  <title>mini games</title>
 </head>
 <body>
   <div class="wrapper">
     <div class="left-bar">
-      <p style="font-size: 25px; padding-top: 10px;">available maps</p>
+      <p style="font-size: 25px; padding-top: 10px;">available games</p>
       <div class="img-wrapper">
-        <img src="assets\maps\desert-map.svg" alt="desert map">
-        <p class="map-name">DESERT</p>
+        <img src="" alt="">
       </div>
       <div class="img-wrapper">
-        <img src="assets\maps\winter-map.svg" alt="winter map">
-        <p class="map-name">WINTER</p>
+        <img src="" alt="">
       </div>
       <div class="img-wrapper">
-        <img src="assets\maps\forest-map.svg" alt="forest map">
-        <p class="map-name">FOREST</p>
+        <img src="" alt="">
       </div>
       <div class="img-wrapper">
-        <img src="assets\maps\classic-map.png" alt="classic map" style="max-height:167px;">
-        <p class="map-name">CLASSIC</p>
+        <img src="" alt="" >
       </div>
     </div>
     <div class="main-text">
@@ -47,38 +43,21 @@
     </div>
     <div class="main-body">
       <div class="select-player">
-        <span>choose a warrior</span>
+        <span>choose a color</span>
         <img class="person" src="assets\person-red.svg" alt="person">
         <img class="person" src="assets\person-blue.svg" alt="person">
       </div>
     </div>
+
+    <div class="start-button-div">
+      <a href="./game.html" target="_blank"><button id="button-start" class="button-standart">
+        <p id="p-start">START</p>
+      </button></a>
+    </div>
   </div>
 </body>
 
-<script >
-  document.querySelectorAll(".text-span").forEach(el => {
-  const chars = el.textContent.split('');
-  el.textContent = '';
-
-  chars.forEach((char, i) => {
-    const span = document.createElement('span');
-    span.textContent = char;
-    span.style.display = 'inline-block';
-    span.style.opacity = 0;
-    span.style.transform = 'translateY(40px)';
-    el.appendChild(span);
-
-    gsap.to(span, {
-      opacity: 1,
-      y: 0,
-      delay: i * 0.10,
-      duration: .7,
-      ease: "power3.out"
-    });
-  });
-});
-
-</script>
+<script src="script.js"></script>
 
 
 </html>

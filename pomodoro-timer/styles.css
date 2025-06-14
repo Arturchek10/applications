@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image: url("images/sky-bg.jpeg");  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+} 
+.timer-div{
+  display: flex;
+  align-items: center;    /*вертикаль*/
+  justify-content: center;  /*горизонталь*/
+  height: 200px;
+  width: 400px;
+  margin: 50px;
+  background: rgba(17, 1, 27, 0.4);
+  border-radius: 20px;
+}
+#pomodoro-txt{
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 54px;
+  text-transform: capitalize;
+}
+#timer{
+  font-size: 72px;
+  font-weight: 500;
+  color: rgb(203, 203, 203);
+}
+.btn{
+  width: 110px;
+  height: 50px;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(0, 0, 0, 0.5);
+  border: solid 3px black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover{
+  transform: scale(1.05);
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+} 
+.session-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.txt-back{
+  background: rgba(0, 0, 0, 0.7);
+  min-width: 175px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#session-txt{
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.reset-back{
+  display: flex;
+  background: rgba(255, 255, 255, 0.55);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+}
+.reset-back:hover{
+  background: rgba(255, 255, 255, 0.75);
+}
+#reset-session-svg{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
