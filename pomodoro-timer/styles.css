@@ -6,6 +6,7 @@
 
 body{
   background-image: url("images/sky-bg.jpeg");  
+  /* background-image: url("images/fall-autumn-red-season.jpg");   */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,13 +23,28 @@ body{
 } 
 .timer-div{
   display: flex;
+  flex-direction: column;
   align-items: center;    /*вертикаль*/
-  justify-content: center;  /*горизонталь*/
+  justify-content: space-around;  /*горизонталь*/
   height: 200px;
   width: 400px;
   margin: 50px;
   background: rgba(17, 1, 27, 0.4);
   border-radius: 20px;
+}
+.head-timer{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  padding: 20px;
+}
+.head-timer p{
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+  cursor: pointer;
+}
+.head-timer p:hover{
+  color: white;
 }
 #pomodoro-txt{
   color: rgba(255, 255, 255, 0.85);
@@ -39,6 +55,7 @@ body{
   font-size: 72px;
   font-weight: 500;
   color: rgb(203, 203, 203);
+  padding-bottom: 40px;
 }
 .btn{
   width: 110px;
@@ -69,7 +86,7 @@ body{
 }
 
 #session-txt{
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 24px;
   text-transform: capitalize;
 }
